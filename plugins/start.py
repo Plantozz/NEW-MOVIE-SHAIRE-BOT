@@ -73,6 +73,10 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("⭕️ JOIN REQUEST GROUP ⭕️", url="https://t.me/NEW_MLM_HD_MOVES"),
+                ],[
+                    InlineKeyboardButton("⭕️ JOIN UPDATE CHANNEL ⭕️", url="https://t.me/mlm_movies_update"),
+                ],[
                     InlineKeyboardButton("HELP ⚙️", callback_data = "about"),
                     InlineKeyboardButton("CLOSE ❎", callback_data = "close")
                 ]
