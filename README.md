@@ -1,6 +1,6 @@
 ## 🔰NEW-MOVIE-SHEARE-BOT🔰
 
-# DEPLOY TO HEROKU
+### DEPLOY TO HEROKU
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
