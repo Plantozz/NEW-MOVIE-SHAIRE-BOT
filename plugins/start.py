@@ -73,11 +73,13 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⭕️ JOIN REQUEST GROUP ⭕️", url="https://t.me/NEW_MLM_HD_MOVES"),
+                    InlineKeyboardButton("🔰 JOIN MOVIE REQUEST GROUP 🔰", url="https://t.me/NEW_MLM_HD_MOVES"),
                 ],[
-                    InlineKeyboardButton("⭕️ JOIN UPDATE CHANNEL ⭕️", url="https://t.me/mlm_movies_update"),
+                    InlineKeyboardButton("💢 ALL MOVIES 💢", url="https://t.me/mlm_movie_1"),
+                    InlineKeyboardButton("💢 NEW MOVIES 💢", url="https://t.me/MLM_ROKES")
                 ],[
-                    InlineKeyboardButton("HELP ⚙️", callback_data = "about"),
+                    InlineKeyboardButton("🔰 JOIN UPDATE CHANNEL 🔰", url="https://t.me/mlm_movies_update"),
+                ],[
                     InlineKeyboardButton("CLOSE ❎", callback_data = "close")
                 ]
             ]
@@ -98,14 +100,14 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
+    text = "<b>SORRY..!\n ഞാൻ all movies എന്ന ചാനെലിൽ നിന്നാണ് സിനിമ തരുന്നത് നിങൾ all movies ചാനെലിൽ ജോയിൻ ചെയ്താലേ എനിക്ക് സിനിമ തരാൻ കഴിയൂ..\n ദയവായി ALL MOVIES ചാനെലിൽ ജോയിൻ ചെയ്ത ശേഷം ഗ്രൂപ്പിലെ ലിങ്കിൽ പോയി ഒന്ന് കൂടെ വന്ന് start കൊടുക്കൂ..😊\nJOIN : @MLM_MOVIE_1</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
         text = text + f" <b>and <a href='https://t.me/{client.username}?start={argument}'>try again</a></b>"
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url = client.invitelink)]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("💢ALL MOVIES💢", url = client.invitelink)]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
