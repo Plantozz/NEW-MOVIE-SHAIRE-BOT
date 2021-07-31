@@ -1,4 +1,4 @@
-##NEW-MOVIE-SHEARE-BOT
+## NEW-MOVIE-SHEARE-BOT
 
 #DEPLOY TO HEROKU
 <details><summary>Deploy To Heroku</summary>
